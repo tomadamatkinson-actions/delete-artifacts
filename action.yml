@@ -1,0 +1,12 @@
+name: "Delete run artifacts"
+  description: "Deletes all run artifacts for a given run"
+inputs:
+  PAT:
+    description: "Personal Access Token required to call webhook"
+    required: true
+  RUN_ID:
+    description: "Run ID that created the artifacts to delete"
+    required: true
+runs:
+  using: "node12"
+  main: "index.js"
